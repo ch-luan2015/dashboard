@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-		<title>Products</title>
+		<title>Edit Product</title>
 	</head>
 	<body>
 		<!-- SideBar -->
@@ -76,94 +76,43 @@
 			</div>
 
 			<!-- Title -->
-			<h3 class="i-name">Products</h3>
+			<h3 class="i-name">Update Product</h3>
 
-			<!-- Table -->
+			<div class="container-fluid w-50 mt-5 mb-5">
+      
+        <form>
+          <div class="mb-2 form-group">
+            <label for="">Product Id</label>
+            <p class="form-control">54648</p>
+          </div>
+  
+          <div class="mb-2 form-group">
+            <label for="">Title</label>
+            <input class="form-control" type="text" placeholder="title" name="title" id="title" />
+          </div>
 
-			<div class="board">
-				<table width="100%">
-					<thead>
-						<tr>
-							<td>Title</td>
-							<td>Category</td>
-							<td>Quantity</td>
-							<td>Price</td>
-							<td></td>
-							<td></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="people">
-								<p><img src="./assets/imgs/gold.jpeg" alt="" /></p>
-								<div class="people-description">
-									<h5>Gold</h5>
-								</div>
-							</td>
-							<td class="people-des">
-								<h5>Material</h5>
-							</td>
-							<td class="active">
-								<p>50</p>
-							</td>
-							<td class="role">
-								<p>200$</p>
-							</td>
-							<td class="edit">
-								<p><a href="#">Edit</a></p>
-							</td>
-							<td class="edit">
-								<p><a href="#">Delete</a></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="people">
-								<p><img src="./assets/imgs/silver.jpeg" alt="" /></p>
-								<div class="people-description">
-									<h5>Silver</h5>
-								</div>
-							</td>
-							<td class="people-des">
-								<h5>Material</h5>
-							</td>
-							<td class="active">
-								<p>50</p>
-							</td>
-							<td class="role">
-								<p>200$</p>
-							</td>
-							<td class="edit">
-								<p><a href="#">Edit</a></p>
-							</td>
-							<td class="edit">
-								<p><a href="#">Delete</a></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="people">
-								<p><img src="./assets/imgs/diamon.jpeg" alt="" /></p>
-								<div class="people-description">
-									<h5>Diamond</h5>
-								</div>
-							</td>
-							<td class="people-des">
-								<h5>Material</h5>
-							</td>
-							<td class="active">
-								<p>50</p>
-							</td>
-							<td class="role">
-								<p>200$</p>
-							</td>
-							<td class="edit">
-								<p><a href="#">Edit</a></p>
-							</td>
-							<td class="edit">
-								<p><a href="#">Delete</a></p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+          <div class="mb-2 form-group">
+            <label for="">Price</label>
+            <input class="form-control" type="text" placeholder="title" name="title" id="title" />
+          </div>
+
+          <div class="mb-2 form-group">
+            <label for="">Quantity</label>
+            <input class="form-control" type="text" placeholder="title" name="title" id="title" />
+          </div>
+
+          <select class="form-select mb-2">
+            <option value="gold">gold</option>
+            <option value="silver">silver</option>
+            <option value="diamond">diamond</option>
+          </select>
+  
+          <div class="mb-2 text-center">
+            <input type="submit" class="btn btn-primary mt-3" value="Update" name="update-product-btn" id="update-product-btn" />
+          </div>
+        </form>
+      </div>
+			
 			</div>
 		</section>
 
