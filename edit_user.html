@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-		<title>Update Product</title>
+		<title>Update User</title>
 	</head>
 	<body>
 		<!-- SideBar -->
@@ -76,39 +76,43 @@
 			</div>
 
 			<!-- Title -->
-			<h3 class="i-name">Update Product</h3>
+			<h3 class="i-name">Update User</h3>
 
 			<div class="container-fluid w-50 mt-5 mb-5">
       
         <form>
           <div class="mb-2 form-group">
-            <label for="">Product Id</label>
+            <label for="">User ID</label>
             <p class="form-control">54648</p>
           </div>
   
+          <div class="mb-2 form-group">
+            <label for="">Name</label>
+            <p class="form-control">Jhon</p>
+          </div>
+
+          <div class="mb-2 form-group">
+            <label for="">Email</label>
+            <input class="form-control" type="email" placeholder="email" name="Email" id="email" />
+          </div>
+
           <div class="mb-2 form-group">
             <label for="">Title</label>
             <input class="form-control" type="text" placeholder="title" name="title" id="title" />
           </div>
 
           <div class="mb-2 form-group">
-            <label for="">Price</label>
-            <input class="form-control" type="text" placeholder="price" name="price" id="price" />
-          </div>
-
-          <div class="mb-2 form-group">
-            <label for="">Quantity</label>
-            <input class="form-control" type="text" placeholder="quantity" name="quantity" id="quantity" />
+            <label for="">Role</label>
+            <input class="form-control" type="text" placeholder="role" name="role" id="role" />
           </div>
 
           <select class="form-select mb-2">
-            <option value="gold">gold</option>
-            <option value="silver">silver</option>
-            <option value="diamond">diamond</option>
+            <option value="gold">Active</option>
+            <option value="silver">InActive</option>
           </select>
   
           <div class="mb-2 text-center">
-            <input type="submit" class="btn btn-primary mt-3" value="Update" name="update-product-btn" id="update-product-btn" />
+            <input type="submit" class="btn btn-primary mt-3" value="Update" name="update-user-btn" id="update-user-btn" />
           </div>
         </form>
       </div>

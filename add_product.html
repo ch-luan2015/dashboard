@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-		<title>Update Product</title>
+		<title>Add New Product</title>
 	</head>
 	<body>
 		<!-- SideBar -->
@@ -76,7 +76,7 @@
 			</div>
 
 			<!-- Title -->
-			<h3 class="i-name">Update Product</h3>
+			<h3 class="i-name">Add New Product</h3>
 
 			<div class="container-fluid w-50 mt-5 mb-5">
       
@@ -101,15 +101,32 @@
             <input class="form-control" type="text" placeholder="quantity" name="quantity" id="quantity" />
           </div>
 
-          <select class="form-select mb-2">
-            <option value="gold">gold</option>
-            <option value="silver">silver</option>
-            <option value="diamond">diamond</option>
-          </select>
-  
-          <div class="mb-2 text-center">
-            <input type="submit" class="btn btn-primary mt-3" value="Update" name="update-product-btn" id="update-product-btn" />
+
+					<div class="form-group">
+						<select  class="form-control mb-2">
+							<option value="gold">gold</option>
+							<option value="silver">silver</option>
+							<option value="diamond">diamond</option>s
+						</select>
+					</div>
+         
+          
+          <div class="input-group mb-3">
+            <div class="input-g roup-prepend">
+              <span class="input-group-text">Image</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input"  placeholder="image" name="image" id="image">
+              <label class="custom-file-label" for="image">Choose file</label>
+            </div>
           </div>
+          
+
+          <div class="mb-2 text-center">
+            <input type="submit" class="btn btn-primary mt-3" value="Add Product" name="add-product-btn" id="add-product-btn" />
+          </div>
+
+
         </form>
       </div>
 			
